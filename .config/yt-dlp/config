@@ -1,0 +1,14 @@
+--write-all-thumbnails
+--write-info-json
+--all-subs
+#--fragment-retries infinite
+--abort-on-unavailable-fragment
+--console-title
+--write-annotations
+--cookies $HOME/ydl_cookies
+--download-archive $YDL_DATA_PATH/archive
+--netrc
+--postprocessor-args="Merger+ffmpeg:-movflags faststart"
+--format "b[vcodec!=h265]/bv[vcodec!=h265]+ba/b/bv+ba"
+--xattrs
+--embed-chapters
